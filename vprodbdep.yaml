@@ -1,6 +1,6 @@
 ---
 apiVersion: apps/v1
-kind: Deployment 
+kind: deployment 
 metadata: 
     name: vprodb
     labels: 
@@ -32,7 +32,7 @@ spec:
                 secretKeyRef:
                   name: app-secret                
                   key: db-pass
-    volumes:
+    volume:
       - name: dbvol
         hostPath:
           path: /data
