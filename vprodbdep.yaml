@@ -32,8 +32,8 @@ spec:
                 secretKeyRef:
                   name: app-secret                
                   key: db-pass
-    volume:
-      - name: dbvol
-        hostPath:
-          path: /data
-          type: DirectoryOrCreate
+      volumes:
+        - name: dbvol
+          hostPath:
+            path: /data
+            type: DirectoryOrCreate
