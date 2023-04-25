@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: vproapp-service
 spec:
-  port:
+  ports:
     - port: 80
       targetPort: vproapp-port
       protocol: TCP
